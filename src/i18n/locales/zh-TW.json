@@ -1,0 +1,246 @@
+{
+  "menu": {
+    "book": "Book",
+    "menu": "Menu",
+    "close": "Close",
+    "menuSlide": {
+      "experience": "Experience",
+      "suites": "Suites",
+      "contact": "Contact"
+    },
+    "bookWith": "Book with KAMO",
+    "check": "Check availablilities"
+  },
+  "home": {
+    "title": "Home",
+    "suites": {
+      "explore": "Explore SUITE",
+      "title": "Suites",
+      "description": "Each experience is shaped by your drive for sense and serenity - from arrival to departure",
+      "button": "Explore suite"
+    },
+    "experiences" : {
+      "title": "Kyoto",
+      "description": "Connected to the city and connected to the nature. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.",
+      "button": "Explore more"
+    },
+    "event": {
+      "title": "Events"
+    }
+  },
+  "experiences" : {
+    "title": "Meet Kyoto",
+    "subtitle": "Experiences"
+  },
+  "suites": {
+    "max": "max persons {{person}}",
+    "sqm": "{{metres}} sqm",
+    "price": "from ¥ {{val, number}} / night",
+    "buttons": {
+      "load": "Load More"
+    }
+  },
+  "suite": {
+    "subtitle": "Suite",
+    "max": "Maximun Occupancy",
+    "maxNumber": "{{adults}} people",
+    "min": "Minimum Stay",
+    "minNights": "{{nights}} Nights",
+    "price": "Price for 1 night from",
+    "priceNight": "¥ {{price, number}}",
+    "amenities": "Suite Amenities",
+    "faq": "FAQ"
+  },
+  "noFound": {
+    "title": "Page not found",
+    "description": "It looks like you've lost your way.",
+    "button": "Back to homepage"
+  },
+
+  "contact" : {
+    "title": "Contact",
+    "subtitle": "Us",
+    "info": {
+      "location" : "Location",
+      "whatsapp" : "Whatsapp",
+      "phone": "Phone number",
+      "email": "Email address"
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "subject": "Subject",
+      "message": "Message",
+      "validation": "Required",
+      "prefix": "Prefix",
+      "submit": "Send Message",
+      "success": "Your inquiry has been sent. An expert from our team will reach you on your available time slot in the next few days.",
+      "error": "We have encountered unexpected difficulty. Please try again late",
+      "requieredMessage": "* all fileds are required"
+    }
+  },
+  "booking": {
+    "edit": "Edit",
+    "totalPeople": "{{people}} people",
+    "modal": {
+      "checkIn":"Check-in",
+      "checkOut":"Check-out"
+    },
+    "titleSection": "Book",
+    "noResults": {
+      "title": "No results",
+      "description": "To get more results, try adjusting your search by changing your dates"
+    },
+    "noEnoughtSpace": "Please note that there are not enough rooms that can fulfill your request. We can only accomodate {{maxGuests}} persons maximum. You may adjust your search by changing the quantity. You can also try our other residences Miya and Toki.",
+    "noEnoughtRooms": "You have selected {{room}} rooms which can only {{people}} persons. To fully occupy the number of persons you have, which is {{guests}} guests, please increase the number of rooms.",
+    "cardRoom": {
+      "max": "Maximun occupancy",
+      "maximun": "{{people}} guests",
+      "minimum": "Minimum stay",
+      "night": "{{number}} night",
+      "price": "Price for 1 night",
+      "only": "Only {{quantity}} left",
+      "priceRoom" : "¥ {{price, number}}",
+      "room": "Room/s",
+      "tabs": {
+        "description": "Description",
+        "amenites": "Amenites"
+      }
+    },
+    "aside": {
+      "room": "{{rooms, number}}  Room(s) for",
+      "price": "¥ {{price, number}}",
+      "message": "You have selected {{room}} for {{people}}, but you have {{guests}} guests, Please Select more rooms"
+    },
+    "title": "Property Information",
+    "info" : {
+      "name" : "Property name",
+      "address": "Address 1",
+      "addresstwo": "Address 2",
+      "city": "City",
+      "postal": "Postal code",
+      "contact": "Contact name",
+      "phone": "Phone",
+      "email":"Email",
+      "checkInTitle": "Check-in/Check out policies",
+      "policies": "This property has the following check-in and check-out times and policies.",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+
+    },
+    "steps" : {
+      "choose": "Choose a room",
+      "checkout": "Checkout"
+    },
+    "buttons": {
+      "back": "Go back",
+      "book": "Book now",
+      "promo": "Have a promo code?",
+      "details": "See Details",
+      "hide" : "Hide Details"
+    }
+  },
+  "navbarBooking": {
+    "checkOut": "Check Out",
+    "checkIn": "Check In",
+    "adults": "Adults",
+    "children": "Children",
+    "errors" : {
+      "more": "Please select more than two days. Thanks"
+
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "form": {
+      "title": "Contact informations",
+      "mandatory": "*Please put the name of the person in-charge of this booking",
+      "firstName":"First Name",
+      "lastName":"Last Name",
+      "email":"Email address",
+      "prefix": "Prefix",
+      "phone":"Phone number",
+      "country":"Select your country",
+      "code": "ZIp code",
+      "who": "Who are you booking for?",
+      "me": "I am the main guest",
+      "someone": "Booking for someone else",
+      "continue" : "Continue with Payment"
+    },
+    "payments": {
+      "title": "Payment details",
+      "cardNumber": "Card Number",
+      "expires": "MM/YY",
+      "cvc": "CVC",
+      "cardName": "Cardholder name",
+      "agree": "I agree with the terms and conditions of Kamo Residence",
+      "secure": "Secure online payment <1>Learn More</1>",
+      "complete": "Complate Resevation"
+    },
+    "aside": {
+      "title": " Your Resevation",
+      "roomSelections": "Room Selections",
+      "checkIn": "Check-in date",
+      "checkOut": "Check-out date",
+      "night": "Night Stay",
+      "roomTotals": "Room Total",
+      "promote": "Promo Code",
+      "total": "Grand total",
+      "price": "¥ {{price, number}}"
+    }
+  },
+  "checkoutComplete": {
+    "title": "Booking Confirmed",
+    "description": "We are pleased to inform you that your reservation request has been received and confirmed. You will receive an email with your booking details. If you did not receive any email, please contact us at contact@kamoresidences.com.",
+    "bookingNumber": "Booking Number",
+    "bookingDetails": "Booking details",
+    "rooms": "Room/s",
+    "checkIn": "Check-in date",
+    "checkOut": "Check-out date",
+    "price": "¥ {{price, number}}",
+    "contact": {
+      "title": "Contact Detail",
+      "name": "Name",
+      "email": "Email address",
+      "phone":"Phone number",
+      "country": "Country"
+    },
+    "guest": {
+      "title": "Guest Details"
+    },
+    "total": "Grand total",
+    "buttons": {
+      "book": "Book another room",
+      "back": "Back to homepage"
+    }
+
+
+  },
+
+  "footer": {
+    "up": {
+      "title": "KAMO OWNERS",
+      "about": "About Kamo",
+      "aboutChildren": {
+        "experience": "Experience",
+        "suites" : "Suites",
+        "contact": "Contact"
+      },
+      "connect": "connect with us",
+      "others": "others residences"
+    },
+    "down": {
+      "location": "Location",
+      "whatsapp": "Whatsapp",
+      "phone": "Phone number",
+      "email": "Email address"
+    },
+    "links": {
+      "cancellation": "Cancellation Policy",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    }
+  }
+}

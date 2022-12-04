@@ -1,18 +1,30 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-stocks",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Get your stocks info",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ramon Julia",
   "dependencies": {
+    "@types/tough-cookie": "^4.0.2",
+    "axios": "^1.2.0",
+    "axios-cookiejar-support": "^4.0.3",
+    "deasync": "^0.1.28",
+    "eslint": "^8.29.0",
+    "formik": "^2.2.9",
     "gatsby": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-sharp": "^5.2.0",
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
+    "i18next": "^22.0.6",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-localstorage-cache": "^1.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-auth-kit": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.0.0",
+    "tough-cookie": "^4.1.2"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
@@ -36,5 +48,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "engines": {
+    "node": "^18 || ^20"
   }
 }
