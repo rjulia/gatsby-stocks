@@ -1,8 +1,30 @@
 import axios from "axios";
 import TokenService from "./token.service";
 
+
+async function getRefresTokken() {
+
+    const config = {
+      "Access-Control-Allow-Credentials": true,
+      withCredentials: true,
+      headers: {
+        Accept: 'application/json',
+        "Content-Type": "application/json",
+      },
+    }
+    console.log("🚀 ~ file: api.js:17 ~ getRefresTokken ~ TokenService.getLocalRefreshToken()", TokenService.getLocalRefreshToken())
+    const rs = await axios.post("http://localhost:1337/api/token/refresh", {
+      refreshToken: TokenService.getLocalRefreshToken(),
+    }, config)
+
+    return rs
+    console.log("🚀 ~ file: api.js:18 ~ getRefresTokke ~ rs", rs)
+}
+
 const instance = axios.create({
   baseURL: "http://localhost:1337/api",
+  "Access-Control-Allow-Credentials": true,
+  withCredentials: true,
   headers: {
     Accept: 'application/json',
     "Content-Type": "application/json",
@@ -22,7 +44,7 @@ instance.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-let count = 5
+
 instance.interceptors.response.use(
   (res) => {
     return res;
@@ -31,20 +53,18 @@ instance.interceptors.response.use(
     const originalConfig = err.config;
     if (originalConfig.url !== "/auth/local" && err.response) {
       //     Access Token was expired
-      if (err.response.status === 401 && !originalConfig.retry && count !== 0) {
+      if (err.response.status === 401 && !originalConfig.retry) {
         originalConfig.retry = true;
-        try {
-          const rs = await instance.post("/token/refresh", {
-            refreshToken: TokenService.getLocalRefreshToken(),
-          }, {
-            "Access-Control-Allow-Credentials": true,
-            withCredentials: true,
-          });
 
-          const { jwt } = rs;
+        
+        try {
+          const rs = await getRefresTokken()
+
+          const { jwt } = rs.data;
+          console.log("🚀 ~ file: api.js:62 ~ jwt", jwt)
           TokenService.updateLocalAccessToken(jwt);
 
-          return instance(originalConfig);
+        return instance(originalConfig);
         } catch (_error) {
           return Promise.reject(_error);
         }

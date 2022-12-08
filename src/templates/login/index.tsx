@@ -23,7 +23,7 @@ function Login(props: any) {
       const response = await login(values)
       console.log("🚀 ~ file: index.tsx:25 ~ onSubmit ~ response ", response)
       if (response.status === 200) {
-        navigate("/dashboard/profile");
+        navigate("/dashboard/profile/");
       }
 
 

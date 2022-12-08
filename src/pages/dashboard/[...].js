@@ -7,9 +7,10 @@ import PrivateRoute from "../../components/PrivateRoute"
 
 const DashboardPage = (props) => {
   const path = _.get(props, 'pageContext.locale') === 'en' ? '/dashboard/' : `${_.get(props, 'pageContext.locale')}/dashboard/`
+  console.log("🚀 ~ file: [...].js:11 ~ DashboardPage ~ path", path)
   return (
     <Router basepath={path}>
-      <PrivateRoute path="/profile/" component={Profile} />
+      <PrivateRoute path="profile/" component={Profile} />
     </Router>
   )
 }
